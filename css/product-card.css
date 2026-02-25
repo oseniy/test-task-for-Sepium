@@ -7,7 +7,7 @@
   width: 100%;
   max-width: var(--card-width);
   min-width: var(--card-min-width);
-  background: var(--color-white);
+  background: var(--color-card-surface);
   border-radius: var(--card-radius);
   overflow: hidden;
   display: flex;
@@ -43,7 +43,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--color-white);
+  background: rgba(var(--color-white), 0.5);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
@@ -122,10 +122,10 @@
   top: 12px;
   right: 12px;
   z-index: 10;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(var(--color-white), 0.5);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кухни на заказ — каталог</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/product-listing.css">
+  <link rel="stylesheet" href="css/product-card.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- SVG Sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- Heart outline -->
+    <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </symbol>
+
+    <!-- Heart filled -->
+    <symbol id="icon-heart-filled" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </symbol>
+
+    <!-- Zoom / expand -->
+    <symbol id="icon-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 3 21 3 21 9"/>
+      <polyline points="9 21 3 21 3 15"/>
+      <line x1="21" y1="3" x2="14" y2="10"/>
+      <line x1="3" y1="21" x2="10" y2="14"/>
+    </symbol>
+
+    <!-- Arrow left -->
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"/>
+    </symbol>
+
+    <!-- Arrow right -->
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 6 15 12 9 18"/>
+    </symbol>
+
+    <!-- Checkmark -->
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+
+    <!-- Arrow right small (for link) -->
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 6 15 12 9 18"/>
+    </symbol>
+  </svg>
+
+  <main class="listing">
+    <div class="listing__grid">
+
+      <!-- Card 1 -->
+      <article class="listing__item product-card" data-card-id="1">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-1.svg" alt="Кухня Модерн Белая — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-2.svg" alt="Кухня Модерн Белая — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-3.svg" alt="Кухня Модерн Белая — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Современная кухня в стиле модерн с глянцевыми фасадами и встроенной техникой</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <!-- Fancybox gallery links (hidden) -->
+          <a href="img/products/kitchen-1.svg" data-fancybox="gallery-1" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-2.svg" data-fancybox="gallery-1" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-3.svg" data-fancybox="gallery-1" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 4607</span>
+          <h3 class="product-card__title">Кухня Модерн Белая с островом и встроенной техникой премиум-класса</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              ПВХ
+            </button>
+            <button class="product-card__modification" type="button">Эмаль</button>
+            <button class="product-card__modification" type="button">Пластик</button>
+            <button class="product-card__modification" type="button">Массив</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">515 700 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 30 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">57</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="listing__item product-card" data-card-id="2">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-2.svg" alt="Кухня Классика Дуб — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-3.svg" alt="Кухня Классика Дуб — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-4.svg" alt="Кухня Классика Дуб — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Классическая кухня из натурального дуба с филёнчатыми фасадами</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <a href="img/products/kitchen-2.svg" data-fancybox="gallery-2" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-3.svg" data-fancybox="gallery-2" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-4.svg" data-fancybox="gallery-2" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 3291</span>
+          <h3 class="product-card__title">Кухня Классика Дуб с патиной и каменной столешницей</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              Эмаль
+            </button>
+            <button class="product-card__modification" type="button">Массив</button>
+            <button class="product-card__modification" type="button">Пластик</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">723 400 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 42 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">34</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="listing__item product-card" data-card-id="3">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-3.svg" alt="Кухня Лофт Графит — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-5.svg" alt="Кухня Лофт Графит — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-6.svg" alt="Кухня Лофт Графит — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Кухня в индустриальном стиле лофт с металлическими деталями</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <a href="img/products/kitchen-3.svg" data-fancybox="gallery-3" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-5.svg" data-fancybox="gallery-3" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-6.svg" data-fancybox="gallery-3" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 5182</span>
+          <h3 class="product-card__title">Кухня Лофт Графит с барной стойкой</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              ПВХ
+            </button>
+            <button class="product-card__modification" type="button">Пластик</button>
+            <button class="product-card__modification" type="button">Эмаль</button>
+            <button class="product-card__modification" type="button">Массив</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">389 200 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 25 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">89</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="listing__item product-card" data-card-id="4">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-4.svg" alt="Кухня Прованс Олива — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-1.svg" alt="Кухня Прованс Олива — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-6.svg" alt="Кухня Прованс Олива — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Уютная кухня в стиле прованс с фрезерованными фасадами</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <a href="img/products/kitchen-4.svg" data-fancybox="gallery-4" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-1.svg" data-fancybox="gallery-4" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-6.svg" data-fancybox="gallery-4" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 2874</span>
+          <h3 class="product-card__title">Кухня Прованс Олива с витражными вставками и открытыми полками</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              Эмаль
+            </button>
+            <button class="product-card__modification" type="button">Массив</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">645 900 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 38 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">42</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="listing__item product-card" data-card-id="5">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-5.svg" alt="Кухня Минимализм Серая — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-2.svg" alt="Кухня Минимализм Серая — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-4.svg" alt="Кухня Минимализм Серая — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Минималистичная кухня с гладкими фасадами без ручек</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <a href="img/products/kitchen-5.svg" data-fancybox="gallery-5" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-2.svg" data-fancybox="gallery-5" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-4.svg" data-fancybox="gallery-5" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 6743</span>
+          <h3 class="product-card__title">Кухня Минимализм Серая с интегрированными ручками</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              Пластик
+            </button>
+            <button class="product-card__modification" type="button">ПВХ</button>
+            <button class="product-card__modification" type="button">Эмаль</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">412 500 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 27 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">23</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="listing__item product-card" data-card-id="6">
+        <div class="product-card__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-6.svg" alt="Кухня Сканди Берёза — вид 1" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-1.svg" alt="Кухня Сканди Берёза — вид 2" loading="lazy">
+              </div>
+              <div class="swiper-slide product-card__slide">
+                <img class="product-card__image" src="img/products/kitchen-3.svg" alt="Кухня Сканди Берёза — вид 3" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-pagination product-card__pagination"></div>
+            <button class="swiper-button-prev product-card__nav product-card__nav-prev" type="button" aria-label="Предыдущий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-left"/></svg>
+            </button>
+            <button class="swiper-button-next product-card__nav product-card__nav-next" type="button" aria-label="Следующий слайд">
+              <svg width="20" height="20"><use href="#icon-arrow-right"/></svg>
+            </button>
+          </div>
+          <div class="product-card__description">
+            <p>Скандинавская кухня из светлой берёзы с лаконичным дизайном</p>
+          </div>
+          <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
+            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+          </button>
+          <a href="img/products/kitchen-6.svg" data-fancybox="gallery-6" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-1.svg" data-fancybox="gallery-6" class="product-card__gallery-link" aria-hidden="true"></a>
+          <a href="img/products/kitchen-3.svg" data-fancybox="gallery-6" class="product-card__gallery-link" aria-hidden="true"></a>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__article">Артикул — 1956</span>
+          <h3 class="product-card__title">Кухня Сканди Берёза с деревянной столешницей и открытыми полками</h3>
+          <span class="product-card__modifications-label">Варианты материалов</span>
+          <div class="product-card__modifications">
+            <button class="product-card__modification product-card__modification--active" type="button">
+              <svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>
+              Массив
+            </button>
+            <button class="product-card__modification" type="button">Эмаль</button>
+            <button class="product-card__modification" type="button">ПВХ</button>
+            <button class="product-card__modification" type="button">Пластик</button>
+          </div>
+          <div class="product-card__price-block">
+            <span class="product-card__price-label">Цена от</span>
+            <span class="product-card__price">892 100 ₽</span>
+            <span class="product-card__price-secondary">Погонный метр от — 52 000 ₽</span>
+          </div>
+          <button class="product-card__order-btn" type="button">Заказать</button>
+        </div>
+        <div class="product-card__footer">
+          <button class="product-card__like" type="button" aria-label="Нравится">
+            <svg class="product-card__like-icon" width="20" height="20"><use href="#icon-heart"/></svg>
+            <svg class="product-card__like-icon-filled" width="20" height="20"><use href="#icon-heart-filled"/></svg>
+            <span class="product-card__like-count">71</span>
+          </button>
+          <a class="product-card__calc-link" href="#">
+            Рассчитать стоимость
+            <svg width="16" height="16"><use href="#icon-chevron-right"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- App JS -->
+  <script src="js/slider.js"></script>
+  <script src="js/fancybox-init.js"></script>
+  <script src="js/card.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

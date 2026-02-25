@@ -1,0 +1,29 @@
+/* ===========================
+   Block: listing
+   =========================== */
+
+.listing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.listing__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+  justify-items: center;
+}
+
+/* ---- Mobile: single column ---- */
+
+@media (max-width: 768px) {
+  .listing {
+    padding: var(--spacing-md);
+  }
+
+  .listing__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}

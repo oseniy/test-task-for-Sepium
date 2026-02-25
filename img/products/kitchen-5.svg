@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="508" height="340" viewBox="0 0 508 340">
+  <rect width="508" height="340" fill="#f0f0e8"/>
+  <!-- U-shaped kitchen -->
+  <!-- Left tall unit -->
+  <rect x="60" y="70" width="65" height="180" rx="4" fill="#d0d0b8" stroke="#b0b096" stroke-width="2"/>
+  <rect x="68" y="78" width="49" height="50" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <rect x="68" y="136" width="49" height="50" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <rect x="68" y="194" width="49" height="48" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <!-- Handles for tall unit -->
+  <rect x="109" y="97" width="4" height="14" rx="2" fill="#98986e"/>
+  <rect x="109" y="155" width="4" height="14" rx="2" fill="#98986e"/>
+  <rect x="109" y="212" width="4" height="14" rx="2" fill="#98986e"/>
+  <!-- Base cabinets center -->
+  <rect x="125" y="165" width="260" height="85" rx="4" fill="#d0d0b8" stroke="#b0b096" stroke-width="2"/>
+  <rect x="135" y="175" width="75" height="65" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <rect x="220" y="175" width="75" height="65" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <rect x="305" y="175" width="70" height="65" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <!-- Base handles -->
+  <circle cx="202" cy="207" r="4" fill="#98986e"/>
+  <circle cx="287" cy="207" r="4" fill="#98986e"/>
+  <circle cx="367" cy="207" r="4" fill="#98986e"/>
+  <!-- Countertop center -->
+  <rect x="120" y="155" width="270" height="14" rx="3" fill="#b8b8a0" stroke="#98986e" stroke-width="1.5"/>
+  <!-- Right tall unit -->
+  <rect x="385" y="70" width="65" height="180" rx="4" fill="#d0d0b8" stroke="#b0b096" stroke-width="2"/>
+  <rect x="393" y="78" width="49" height="80" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <rect x="393" y="166" width="49" height="76" rx="3" fill="#e0e0d0" stroke="#b0b096" stroke-width="1.5"/>
+  <!-- Right handles -->
+  <rect x="393" y="112" width="4" height="14" rx="2" fill="#98986e"/>
+  <rect x="393" y="198" width="4" height="14" rx="2" fill="#98986e"/>
+  <!-- Text label -->
+  <text x="254" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#88885a">Кухня 5</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "sepium-product-listing",
+  "version": "1.0.0",
+  "description": "Листинг товаров — тестовое задание Sepium",
+  "scripts": {
+    "start": "live-server --port=3000 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="508" height="340" viewBox="0 0 508 340">
+  <rect width="508" height="340" fill="#f0e8e8"/>
+  <!-- Kitchen with range hood -->
+  <!-- Base cabinets -->
+  <rect x="60" y="165" width="388" height="85" rx="4" fill="#d8c0c0" stroke="#b89696" stroke-width="2"/>
+  <!-- Cabinet doors -->
+  <rect x="70" y="175" width="85" height="65" rx="3" fill="#e0d0d0" stroke="#b89696" stroke-width="1.5"/>
+  <rect x="165" y="175" width="85" height="65" rx="3" fill="#e0d0d0" stroke="#b89696" stroke-width="1.5"/>
+  <!-- Oven/stove area -->
+  <rect x="260" y="175" width="80" height="65" rx="3" fill="#c8b0b0" stroke="#b89696" stroke-width="1.5"/>
+  <circle cx="280" cy="200" r="8" fill="none" stroke="#a08888" stroke-width="1.5"/>
+  <circle cx="320" cy="200" r="8" fill="none" stroke="#a08888" stroke-width="1.5"/>
+  <circle cx="280" cy="222" r="8" fill="none" stroke="#a08888" stroke-width="1.5"/>
+  <circle cx="320" cy="222" r="8" fill="none" stroke="#a08888" stroke-width="1.5"/>
+  <!-- Right cabinet -->
+  <rect x="350" y="175" width="88" height="65" rx="3" fill="#e0d0d0" stroke="#b89696" stroke-width="1.5"/>
+  <!-- Door handles -->
+  <rect x="147" y="200" width="4" height="18" rx="2" fill="#a08888"/>
+  <rect x="242" y="200" width="4" height="18" rx="2" fill="#a08888"/>
+  <rect x="430" y="200" width="4" height="18" rx="2" fill="#a08888"/>
+  <!-- Countertop -->
+  <rect x="50" y="155" width="408" height="14" rx="3" fill="#c8a8a8" stroke="#a08888" stroke-width="1.5"/>
+  <!-- Range hood -->
+  <polygon points="260,60 340,60 355,110 245,110" fill="#d0b8b8" stroke="#b89696" stroke-width="1.5"/>
+  <rect x="270" y="110" width="60" height="45" fill="#d8c0c0" stroke="#b89696" stroke-width="1"/>
+  <!-- Text label -->
+  <text x="254" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#a07070">Кухня 4</text>
+</svg>

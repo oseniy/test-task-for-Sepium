@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:swiperjs.com)",
+      "WebFetch(domain:fancyapps.com)",
+      "Bash(cd \"D:/учеба/моя учеба/тестовое_Сепиум/проект\" && npm install 2>&1)"
+    ]
+  }
+}

@@ -72,6 +72,7 @@
 
 /* Pagination bars */
 .product-card__pagination {
+  position: static;
   display: flex;
   gap: 5px;
 }
@@ -153,7 +154,6 @@
   flex-direction: column;
   gap: 20px;
   flex-grow: 1;
-  border-radius: 0 0 var(--card-radius) var(--card-radius);
 }
 
 .product-card__article {

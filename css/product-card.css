@@ -240,8 +240,6 @@
 
   width: 0;
   opacity: 0;
-  transform: scale(0.6);
-
   overflow: hidden;
 
   height: 18px;
@@ -252,20 +250,25 @@
 
   transition:
     width 0.25s ease,
-    opacity 0.2s ease,
-    transform 0.25s ease;
+    opacity 0.2s ease;
 }
 
 .product-card__modification--active .product-card__modification-check {
   width: 18px;
   opacity: 1;
-  transform: scale(1);
 }
 
 .product-card__modification-check svg {
   width: 14px;
   height: 14px;
   color: var(--color-text-primary);
+
+  transform: scale(0.6);
+  transition: transform 0.25s ease;
+}
+
+.product-card__modification--active .product-card__modification-check svg {
+  transform: scale(1);
 }
 
 /* Order block (price + button row) */

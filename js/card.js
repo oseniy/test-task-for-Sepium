@@ -1,4 +1,4 @@
-var ProductCard = (function () {
+const ProductCard = (function () {
   'use strict';
 
   function init() {
@@ -12,8 +12,8 @@ var ProductCard = (function () {
     $(document).on('click', '.product-card__modification', function (e) {
       e.stopPropagation();
 
-      var $btn = $(this);
-      var $container = $btn.closest('.product-card__modifications');
+      const $btn = $(this);
+      const $container = $btn.closest('.product-card__modifications');
 
       // Remove active from siblings
       $container.find('.product-card__modification').removeClass('product-card__modification--active');
@@ -29,10 +29,10 @@ var ProductCard = (function () {
     $(document).on('click', '.product-card__like', function (e) {
       e.stopPropagation();
 
-      var $btn = $(this);
-      var $count = $btn.find('.product-card__like-count');
-      var count = parseInt($count.text(), 10) || 0;
-      var isActive = $btn.hasClass('product-card__like--active');
+      const $btn = $(this);
+      const $count = $btn.find('.product-card__like-count');
+      const count = parseInt($count.text(), 10) || 0;
+      const isActive = $btn.hasClass('product-card__like--active');
 
       if (isActive) {
         $btn.removeClass('product-card__like--active');
@@ -53,7 +53,7 @@ var ProductCard = (function () {
   // Click on card navigates to product (except interactive elements)
   function bindCardClick() {
     $(document).on('click', '.product-card', function (e) {
-      var $target = $(e.target);
+      const $target = $(e.target);
 
       // Don't navigate if clicking on interactive elements
       if (
@@ -68,7 +68,7 @@ var ProductCard = (function () {
         return;
       }
 
-      var cardId = $(this).data('card-id');
+      const cardId = $(this).data('card-id');
       // Navigate to product page
       window.location.href = '/card?id=' + cardId;
     });

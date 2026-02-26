@@ -1,20 +1,20 @@
-var ProductSlider = (function () {
+const ProductSlider = (function () {
   'use strict';
 
-  var swiperInstances = [];
-  var isMobile = window.matchMedia('(max-width: 768px)');
+  const swiperInstances = [];
+  const isMobile = window.matchMedia('(max-width: 768px)');
 
   function initSliders() {
-    var sliderEls = document.querySelectorAll('.product-card__slider .swiper');
+    const sliderEls = document.querySelectorAll('.product-card__slider .swiper');
 
     sliderEls.forEach(function (el) {
-      var card = el.closest('.product-card');
-      var paginationEl = card.querySelector('.product-card__pagination');
-      var prevEl = card.querySelector('.product-card__nav-prev');
-      var nextEl = card.querySelector('.product-card__nav-next');
-      var totalSlides = el.querySelectorAll('.swiper-slide').length;
+      const card = el.closest('.product-card');
+      const paginationEl = card.querySelector('.product-card__pagination');
+      const prevEl = card.querySelector('.product-card__nav-prev');
+      const nextEl = card.querySelector('.product-card__nav-next');
+      const totalSlides = el.querySelectorAll('.swiper-slide').length;
 
-      var swiper = new Swiper(el, {
+      const swiper = new Swiper(el, {
         loop: true,
         speed: 400,
         spaceBetween: 0,
@@ -36,7 +36,7 @@ var ProductSlider = (function () {
         on: {
           init: function () {
             // Set pagination bar widths after init
-            var bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+            const bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
             bullets.forEach(function (bullet) {
               bullet.style.width = (100 / totalSlides) + '%';
             });
@@ -63,7 +63,7 @@ var ProductSlider = (function () {
   }
 
   function getActiveSlideIndex(cardEl) {
-    var swiperEl = cardEl.querySelector('.swiper');
+    const swiperEl = cardEl.querySelector('.swiper');
     if (swiperEl && swiperEl.swiper) {
       return swiperEl.swiper.realIndex;
     }

@@ -1,4 +1,4 @@
-var ProductFancybox = (function () {
+const ProductFancybox = (function () {
   'use strict';
 
   function init() {
@@ -26,14 +26,14 @@ var ProductFancybox = (function () {
       e.preventDefault();
       e.stopPropagation();
 
-      var card = $(this).closest('.product-card');
-      var activeIndex = ProductSlider.getActiveSlideIndex(card[0]);
-      var galleryLinks = card.find('.product-card__gallery-link');
+      const card = $(this).closest('.product-card');
+      const activeIndex = ProductSlider.getActiveSlideIndex(card[0]);
+      const galleryLinks = card.find('.product-card__gallery-link');
 
       if (galleryLinks.length === 0) return;
 
       // Build gallery items array
-      var items = [];
+      const items = [];
       galleryLinks.each(function () {
         items.push({
           src: $(this).attr('href'),

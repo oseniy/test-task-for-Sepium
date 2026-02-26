@@ -2,7 +2,7 @@
 
 ## Демо
 
-[https://github.com/user-attachments/assets/presentation.mp4](https://github.com/user-attachments/assets/18449885-3be0-4b9c-aae7-6f376098eeee)
+https://github.com/user-attachments/assets/e03da9ee-b5ce-48c2-bdc2-da46c8c6adb3
 
 ## Стек
 

@@ -39,21 +39,32 @@
     </symbol>
 
     <!-- Zoom / expand -->
-    <symbol id="icon-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="15 3 21 3 21 9"/>
-      <polyline points="9 21 3 21 3 15"/>
+    <symbol
+        id="icon-zoom"
+        viewBox="0 0 18 18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <!-- top-right -->
+        <path d="M10 1 H17 V8" />
+
+        <!-- bottom-left -->
+        <path d="M8 17 H1 V10" />
     </symbol>
 
     <!-- Arrow left -->
     <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="15 18 9 12 15 6"/>
+      <polyline points="15 5 9 12 15 19"/>
     </symbol>
 
     <!-- Arrow right -->
     <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="9 6 15 12 9 18"/>
+      <polyline points="9 5 15 12 9 19"/>
     </symbol>
-
+    
     <!-- Checkmark -->
     <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="20 6 9 17 4 12"/>
@@ -95,7 +106,7 @@
             <p>Современная кухня в стиле модерн с глянцевыми фасадами и встроенной техникой</p>
           </div>
           <button class="product-card__zoom" type="button" aria-label="Увеличить фото">
-            <svg width="20" height="20"><use href="#icon-zoom"/></svg>
+            <svg width="24" height="24"><use href="#icon-zoom"/></svg>
           </button>
           <!-- Fancybox gallery links (hidden) -->
           <a href="img/products/kitchen-1.svg" data-fancybox="gallery-1" class="product-card__gallery-link" aria-hidden="true"></a>

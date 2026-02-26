@@ -40,8 +40,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 36px;
-  height: 36px;
+  width: 43px;
+  height: 43px;
   border-radius: 50%;
   background: rgba(var(--color-white), 0.5);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -51,7 +51,7 @@
   opacity: 0;
   transition: opacity var(--transition-fast);
   /* Reset swiper defaults */
-  color: var(--color-text-primary);
+  color: var(--color-arrows);
 }
 
 .product-card__nav::after {
@@ -123,13 +123,13 @@
   right: 12px;
   z-index: 10;
   width: 32px;
-  height: 32px;
+  height: 34px;
   border-radius: 8px;
   background: rgba(var(--color-white), 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-primary);
+  color: var(--color-arrows);
   opacity: 0;
   transition: opacity var(--transition-fast), background var(--transition-fast);
 }

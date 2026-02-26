@@ -2,9 +2,7 @@
 
 ## Демо
 
-https://github.com/user-attachments/assets/presentation.mp4
-
-> *Загрузите `presentation.mp4` через GitHub UI, затем замените ссылку выше на полученный URL.*
+[https://github.com/user-attachments/assets/presentation.mp4](https://github.com/user-attachments/assets/18449885-3be0-4b9c-aae7-6f376098eeee)
 
 ## Стек
 

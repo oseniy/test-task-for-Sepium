@@ -382,6 +382,7 @@
   transition: color var(--transition-fast);
 }
 
+
 .product-card__like svg {
   width: 22px;
   height: 22px;
@@ -393,6 +394,10 @@
 
 .product-card__like--active {
   color: var(--color-accent);
+}
+
+.product-card__like:hover {
+  color: var(--color-accent-hover);
 }
 
 .product-card__like--active .product-card__like-icon {
@@ -427,8 +432,8 @@
 }
 
 .product-card__calc-link svg {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   transition: transform var(--transition-fast);
 }
 

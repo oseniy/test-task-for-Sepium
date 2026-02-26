@@ -47,9 +47,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity var(--transition-fast);
+  opacity: 1;
+  transition: opacity var(--transition-fast), background var(--transition-fast);
   color: var(--color-arrows);
+}
+
+.product-card__nav:hover {
+  background: rgba(var(--color-white), 0.7);
 }
 
 .product-card__nav::after {
@@ -126,13 +130,13 @@
   align-items: center;
   justify-content: center;
   color: var(--color-arrows);
-  opacity: 0;
+  opacity: 1;
   transition: opacity var(--transition-fast), background var(--transition-fast);
   padding: 5px 4px;
 }
 
 .product-card__zoom:hover {
-  background: rgba(var(--color-white), 0.8);
+  background: rgba(var(--color-white), 0.7);
 }
 
 .product-card__zoom svg {
@@ -416,7 +420,7 @@
    Hover states (desktop only)
    =========================== */
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .product-card:hover {
     box-shadow: 0 0 20px var(--color-card-shadow-hover);
   }

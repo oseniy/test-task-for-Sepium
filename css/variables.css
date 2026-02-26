@@ -2,15 +2,16 @@
   /* Colors */
   --color-accent: #FF5C00;
   --color-accent-hover: #e85400;
-  --color-text-primary: #32312F;
+  --color-text-primary: #31302F;
   --color-text-secondary: #656565;
   --color-card-surface: #F6F6F6;
-  --color-arrows: #464646;
+  --color-arrows: #454545;
   --color-white: 255, 255, 255;
-  --color-modification-active-bg: #32312F;
+  --color-modification-active-bg: #31302F;
   --color-modification-active-text: #FFFFFF;
   --color-pagination-inactive: #E6E6E6;
   --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-bg: #FFFFFF;
   --color-card-shadow: rgba(0, 0, 0, 0.08);
   --color-card-shadow-hover: rgba(0, 0, 0, 0.15);
   --color-like-icon: #A1A5AD;

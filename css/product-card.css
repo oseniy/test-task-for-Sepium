@@ -153,12 +153,18 @@
 
 .product-card__body {
   background: var(--color-card-surface);
-  padding: 10px 20px 14px;
+  padding: 10px 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex-grow: 1;
   transition: background var(--transition-fast);
+}
+
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .product-card__article {
@@ -381,6 +387,7 @@
   gap: 5px;
   padding: 6px 12px;
   border-radius: 18px;
+  background: var(--color-card-surface);
   color: var(--color-like-icon);
   transition: color var(--transition-fast);
 }
@@ -398,7 +405,7 @@
   color: var(--color-accent);
 }
 
-.product-card__like:hover {
+.product-card__like--active .product-card__like:hover {
   color: var(--color-accent-hover);
 }
 

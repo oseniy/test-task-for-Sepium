@@ -211,8 +211,12 @@
   color: var(--color-text-primary);
   background: var(--color-card-surface);
   border: none;
-  transition: background var(--transition-fast), color var(--transition-fast);
   cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    padding 0.25s ease;
 }
 
 .product-card__modification:hover {
@@ -230,19 +234,32 @@
 
 /* Checkmark in active modification */
 .product-card__modification-check {
-  display: none;
-  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 0;
+  opacity: 0;
+  transform: scale(0.6);
+
+  overflow: hidden;
+
   height: 18px;
   background: var(--color-card-surface);
   border-radius: 50%;
   padding: 2px;
   flex-shrink: 0;
+
+  transition:
+    width 0.25s ease,
+    opacity 0.2s ease,
+    transform 0.25s ease;
 }
 
 .product-card__modification--active .product-card__modification-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 18px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .product-card__modification-check svg {

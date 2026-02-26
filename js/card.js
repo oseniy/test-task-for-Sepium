@@ -21,13 +21,6 @@ var ProductCard = (function () {
 
       // Set active on clicked
       $btn.addClass('product-card__modification--active');
-
-      // Add check icon if not present
-      if ($btn.find('.product-card__modification-check').length === 0) {
-        $btn.prepend(
-          '<svg class="product-card__modification-check" width="14" height="14"><use href="#icon-check"/></svg>'
-        );
-      }
     });
   }
 

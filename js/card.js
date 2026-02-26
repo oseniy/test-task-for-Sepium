@@ -68,9 +68,8 @@ const ProductCard = (function () {
         return;
       }
 
-      const cardId = $(this).data('card-id');
-      // Navigate to product page
-      window.location.href = '/card?id=' + cardId;
+      // Open product page in new tab
+      window.open('card.html', '_blank');
     });
   }
 
